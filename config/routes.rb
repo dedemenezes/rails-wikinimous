@@ -3,19 +3,21 @@ Rails.application.routes.draw do
 
   root to: "articles#index"
 
-  get "/articles", to: "articles#index", as: :articles
-  
-  get "/articles/new", to: "articles#new", as: :new_article
-    
-  post "/articles", to: "articles#create"
+  # get "/articles", to: "articles#index", as: :articles
+ 
+  # get "/articles/new", to: "articles#new", as: :new_article
 
-  get "/article/:id/edit", to: "articles#edit", as: :edit_article
+  # post "/articles", to: "articles#create"
+ 
+  # get "/article/:id/edit", to: "articles#edit", as: :edit_article
+ 
+  # patch "/article/:id", to: "articles#update"
+ 
+  # get "/article/:id", to: "articles#show", as: :article
 
-  patch "/article/:id", to: "articles#update"
+  # delete "/article/:id", to: "articles#destroy"
 
-  get "/article/:id", to: "articles#show", as: :article
-
-  delete "/article/:id", to: "articles#destroy"
+  resources :articles
 
 
 
