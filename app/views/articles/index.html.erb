@@ -2,9 +2,9 @@
   <% @articles.each do |article| %>
     <article>
       <h2>
-        <%= link_to "#{article.title}", article_path(article) %> 
+        <%= link_to "#{article.title}", article_path(article), class: 'main' %> 
       </h2>
-      <p>
+      <p class='main'>
         <%= article.content %>
       </p>
     </article>

@@ -1,8 +1,5 @@
-<%= form_for @article do |f| %>
-<%= f.label :title, "Title" %>
-<%= f.text_field :title %>
-<%= f.label :content, "Content" %>
-<%= f.text_field :content %>
-<%= f.submit %>
-raise
+<%= simple_form_for(article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.submit %>
 <% end %>
