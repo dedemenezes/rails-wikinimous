@@ -1,0 +1,60 @@
+@import "bootstrap/scss/bootstrap";
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+.navbar{
+  background-color: rgb(246, 246, 246);
+  height: 5.5vh;
+  font-size: 1.15em;
+  margin-bottom: 40px;
+}
+
+a {
+
+}
+
+body{
+  background-color: #FFFFFF;
+}
+
+.main {
+  color: #4D7AB7;
+  &:hover {
+    color: #23527C;
+  }
+}
+
+
+.new {
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.home {
+  font-size: 18px;
+
+}
+
+.home, .new {
+  color: rgb(61, 61, 61);
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
